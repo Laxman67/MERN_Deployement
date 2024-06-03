@@ -70,7 +70,7 @@ app.get("/signup", (req, res) => {
     <form action="/signup" method="post">
       <input id="username" type="text" name="username" placeholder="Username">
       <input id="password" type="password" name="password" placeholder="Password">
-      <button id="submit" type="submit">Please register</button>
+      <button id="submit" type="submit"> Click to Register</button>
     </form>
   `);
 });
@@ -105,5 +105,7 @@ app.post("/signup", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  if (process.env.NODE_ENV == "development") {
+    console.log(`Server running at http://localhost:${port}`);
+  }
 });
