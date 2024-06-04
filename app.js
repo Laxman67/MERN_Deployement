@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 configDotenv();
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 80;
 
 mongoose
   .connect(process.env.DBURL)
