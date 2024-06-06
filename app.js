@@ -70,7 +70,7 @@ app.get("/signup", (req, res) => {
     <form action="/signup" method="post">
       <input id="username" type="text" name="username" placeholder="Username">
       <input id="password" type="password" name="password" placeholder="Password">
-      <button id="submit" type="submit"> Click to Register</button>
+      <button id="submit" type="submit"> Register Here</button>
     </form>
   `);
 });
